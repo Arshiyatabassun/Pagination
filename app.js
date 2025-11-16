@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import "./styles.css";
+import Counter from "./Counter"
 
 const ProductCard = ({ image, title }) => {
   return (
@@ -44,6 +45,7 @@ export default function App() {
     <h1>No Products found</h1>
   ) : (
     <div className="App">
+      <Counter />
       <h1>Pagination</h1>
 
       <div className="pagination-container">
